@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+* {
+  line-height: 1;
+}
+#main {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+}
+aside {
+  background-color: #2d8877;
+}
+#login-screen {
+  background-image: url("./assets/360_F_355607062_zYMS8jaz4SfoykpWz5oViRVKL32IabTP.jpg");
+}

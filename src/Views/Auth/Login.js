@@ -3,16 +3,19 @@ import { Link } from "react-router-dom";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const onSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
     <>
       {/* Card Title  */}
       <h2 className="text-center font-semibold text-3xl lg:text-4xl text-gray-800">
         Login
       </h2>
-      <form className="mt-10" method="POST">
+      <form className="mt-10" onSubmit={onSubmit} required>
         {/* Email Input  */}
         <label
-          for="email"
+          htmlFor="email"
           className="block text-xs font-semibold text-gray-600 uppercase"
         >
           E-mail
@@ -22,7 +25,7 @@ const Login = () => {
           type="email"
           name="email"
           placeholder="e-mail address"
-          autocomplete="email"
+          autoComplete="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           className="block w-full py-3 px-1 mt-2 
@@ -34,7 +37,7 @@ const Login = () => {
 
         {/* Password Input  */}
         <label
-          for="password"
+          htmlFor="password"
           className="block mt-2 text-xs font-semibold text-gray-600 uppercase"
         >
           Password
@@ -44,7 +47,7 @@ const Login = () => {
           type="password"
           name="password"
           placeholder="password"
-          autocomplete="current-password"
+          autoComplete="current-password"
           className="block w-full py-3 px-1 mt-2 mb-4
                     text-gray-800 appearance-none 
                     border-b-2 border-gray-100

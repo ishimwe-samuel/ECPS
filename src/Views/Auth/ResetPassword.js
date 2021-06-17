@@ -4,7 +4,7 @@ const ResetPassword = () => {
     <>
       <form className="mt-10" method="POST" autoComplete="off">
         <label
-          for="new_password"
+          htmlFor="new_password"
           className="block mt-2 text-xs font-semibold text-gray-600 uppercase"
         >
           New Password
@@ -14,7 +14,7 @@ const ResetPassword = () => {
           type="password"
           name="new_password"
           placeholder="New password"
-          autocomplete="current-password"
+          autoComplete="current-password"
           className="block w-full py-3 px-1 mt-2 mb-4
                     text-gray-800 appearance-none 
                     border-b-2 border-gray-100
@@ -22,7 +22,7 @@ const ResetPassword = () => {
           required
         />
         <label
-          for="comfirm_new_password"
+          htmlFor="comfirm_new_password"
           className="block mt-2 text-xs font-semibold text-gray-600 uppercase"
         >
           Comfirm New Password
@@ -32,7 +32,7 @@ const ResetPassword = () => {
           type="password"
           name="comfirm_new_password"
           placeholder="Comfirm New password"
-          autocomplete="current-password"
+          autoComplete="current-password"
           className="block w-full py-3 px-1 mt-2 mb-4
                     text-gray-800 appearance-none 
                     border-b-2 border-gray-100
